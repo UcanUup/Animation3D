@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kod-80-7Gc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UOf-ID-ckh">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ta1-sX-kHf">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="UOf-ID-ckh" firstAttribute="leading" secondItem="Kod-80-7Gc" secondAttribute="leading" id="8mz-Af-ICn"/>
+                                    <constraint firstAttribute="trailing" secondItem="ta1-sX-kHf" secondAttribute="trailing" id="AkZ-mD-cm2"/>
+                                    <constraint firstItem="UOf-ID-ckh" firstAttribute="top" secondItem="Kod-80-7Gc" secondAttribute="top" id="EK3-Xp-gpV"/>
+                                    <constraint firstItem="ta1-sX-kHf" firstAttribute="leading" secondItem="Kod-80-7Gc" secondAttribute="leading" id="GLX-59-prC"/>
+                                    <constraint firstAttribute="bottom" secondItem="ta1-sX-kHf" secondAttribute="bottom" id="Nuj-Ck-CCD"/>
+                                    <constraint firstItem="ta1-sX-kHf" firstAttribute="top" secondItem="Kod-80-7Gc" secondAttribute="top" id="Uk7-qJ-mSb"/>
+                                    <constraint firstAttribute="trailing" secondItem="UOf-ID-ckh" secondAttribute="trailing" id="WUC-7K-rdk"/>
+                                    <constraint firstAttribute="bottom" secondItem="UOf-ID-ckh" secondAttribute="bottom" id="iqH-3f-42z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kod-80-7Gc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Wk-ka-Wsm"/>
+                            <constraint firstItem="Kod-80-7Gc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mEB-3I-Zgo"/>
+                            <constraint firstAttribute="bottom" secondItem="Kod-80-7Gc" secondAttribute="bottom" id="ruA-z0-6r0"/>
+                            <constraint firstAttribute="trailing" secondItem="Kod-80-7Gc" secondAttribute="trailing" id="zSX-yq-Vyq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="Kod-80-7Gc" id="pLN-S2-zqu"/>
+                        <outlet property="imageView" destination="UOf-ID-ckh" id="Htt-44-xSJ"/>
+                        <outlet property="imageView2" destination="ta1-sX-kHf" id="jsR-cV-zJv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.png" width="904" height="1222"/>
+        <image name="2.png" width="788" height="1466"/>
+    </resources>
 </document>

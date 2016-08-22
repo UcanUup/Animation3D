@@ -15,6 +15,9 @@
 		B43FD8FD1D4216B6002724DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43FD8FB1D4216B6002724DC /* LaunchScreen.storyboard */; };
 		B43FD9081D4216B7002724DC /* Animation3DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FD9071D4216B7002724DC /* Animation3DTests.m */; };
 		B43FD9131D4216B7002724DC /* Animation3DUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FD9121D4216B7002724DC /* Animation3DUITests.m */; };
+		B43FD9231D421D37002724DC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B43FD9221D421D37002724DC /* 1.png */; };
+		B43FD9251D45F872002724DC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B43FD9241D45F872002724DC /* 2.png */; };
+		B494A7101D6ACB6C00803899 /* UIView+Animation3D.m in Sources */ = {isa = PBXBuildFile; fileRef = B494A70F1D6ACB6C00803899 /* UIView+Animation3D.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		B43FD90E1D4216B7002724DC /* Animation3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Animation3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43FD9121D4216B7002724DC /* Animation3DUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animation3DUITests.m; sourceTree = "<group>"; };
 		B43FD9141D4216B7002724DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43FD9221D421D37002724DC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B43FD9241D45F872002724DC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		B494A70E1D6ACB6C00803899 /* UIView+Animation3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation3D.h"; sourceTree = "<group>"; };
+		B494A70F1D6ACB6C00803899 /* UIView+Animation3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation3D.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,10 @@
 		B43FD8EC1D4216B6002724DC /* Animation3D */ = {
 			isa = PBXGroup;
 			children = (
+				B43FD9221D421D37002724DC /* 1.png */,
+				B43FD9241D45F872002724DC /* 2.png */,
+				B494A70E1D6ACB6C00803899 /* UIView+Animation3D.h */,
+				B494A70F1D6ACB6C00803899 /* UIView+Animation3D.m */,
 				B43FD8F01D4216B6002724DC /* AppDelegate.h */,
 				B43FD8F11D4216B6002724DC /* AppDelegate.m */,
 				B43FD8F31D4216B6002724DC /* ViewController.h */,
@@ -246,7 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43FD9231D421D37002724DC /* 1.png in Resources */,
 				B43FD8FD1D4216B6002724DC /* LaunchScreen.storyboard in Resources */,
+				B43FD9251D45F872002724DC /* 2.png in Resources */,
 				B43FD8FA1D4216B6002724DC /* Assets.xcassets in Resources */,
 				B43FD8F81D4216B6002724DC /* Main.storyboard in Resources */,
 			);
@@ -275,6 +288,7 @@
 			files = (
 				B43FD8F51D4216B6002724DC /* ViewController.m in Sources */,
 				B43FD8F21D4216B6002724DC /* AppDelegate.m in Sources */,
+				B494A7101D6ACB6C00803899 /* UIView+Animation3D.m in Sources */,
 				B43FD8EF1D4216B6002724DC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +515,7 @@
 				B43FD9191D4216B7002724DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B43FD91A1D4216B7002724DC /* Build configuration list for PBXNativeTarget "Animation3DTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +524,7 @@
 				B43FD91C1D4216B7002724DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B43FD91D1D4216B7002724DC /* Build configuration list for PBXNativeTarget "Animation3DUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +533,7 @@
 				B43FD91F1D4216B7002724DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

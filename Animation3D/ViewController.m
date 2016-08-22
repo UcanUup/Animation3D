@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Animation3D.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView2;
 
 @end
 
@@ -16,12 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _containerView.bounds = self.view.bounds;
+    
+    [UIView transition3DFromView:_imageView toView:_imageView2 leanAngle:0 duration:1.0f completion:nil];
 }
 
 @end
