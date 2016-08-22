@@ -2,8 +2,8 @@
 //  UIView+Animation3D.h
 //  Animation3D
 //
-//  Created by 刘洋洋 on 16/8/22.
-//  Copyright © 2016年 刘洋洋. All rights reserved.
+//  Created by Young on 16/8/22.
+//  Copyright © 2016年 Young. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
